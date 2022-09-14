@@ -1,0 +1,7 @@
+print("Wellcome to the tip calculator")
+bill = int(input("What was the bill amount? \n"))
+people = int(input("How many people will pay it? \n"))
+percent = int(input("How many percent would you like to pay? 10, 12 or 20? "))
+each_one = (bill / people) * (percent / 100) + (bill/people)
+final_amount = "{:.2f}".format(each_one)
+print(f"Each person should pay: $ {final_amount}")
